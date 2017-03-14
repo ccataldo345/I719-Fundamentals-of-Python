@@ -8,17 +8,16 @@
   </head>
   <body>
     <div class="container">
-    	<h1>SHOP</h1>
-    	<br/>
-    	<br/>
-    
-		<ul> 
 
-			{% for item in food %}
-				<li>{{item}}</li>
-			{% endfor %}
+<h1>Current Weather</h1>
+<br/>
 
-		</ul> 
+ City: {{city}}
+ <br/>
+ Temperature: {{(temp/25)}}°C
+ <br/>
+ Description: {{description}}
+
 <br />
 <br />
 <a href="http://localhost:5000/">Main page</a>

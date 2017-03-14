@@ -1,4 +1,5 @@
 from flask import Flask, render_template, redirect, url_for, request
+import requests
 
 app = Flask(__name__)
 
@@ -28,6 +29,17 @@ def login():
             return redirect(url_for('home'))    
     return render_template("login.html", error=error)
 
+
+@app.route('/weather')
+def weather():
+    r = requests.get('http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1')
+    r.json()
+
+    city = r.json()['name']
+    temp = r.json()['main']['temp']
+    description = r.json()['weather'][0]['description']
+
+    return render_template("weather.html", city=city, temp=temp, description=description)
 
 @app.route('/shop')
 def shop():
