@@ -11,18 +11,9 @@ USAGE
 
 `python3 main.py`
 
-```
-And include a file called "requirements.txt", which should look like this
-```
+
 REQUIREMENTS
 -----
 
-flask
-
-```
-and for every new package you install with pip, add the name of the package to this file on a new line like this:
-
-```
-flask
-module-from-pip
-```
+Flask==0.12
+requests==2.9.1
