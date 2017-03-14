@@ -49,7 +49,7 @@ def shop():
 
 @app.route('/page01')
 def page01():
-    return "<h2>This is page 2</h2>"
+    return '<h2>This is page 1</h2>' #<br /><br /><a href="http://localhost:5000/">Main page</a>'
 
 
 '''@app.route('/profile/<username>')

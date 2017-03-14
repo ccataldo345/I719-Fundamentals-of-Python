@@ -12,6 +12,11 @@ USAGE
 `python3 main.py`
 
 
+UNIT TEST
+-----
+'python3 -m unittest test_main.py'
+
+
 REQUIREMENTS
 -----
 
