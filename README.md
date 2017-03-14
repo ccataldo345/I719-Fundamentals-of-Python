@@ -14,11 +14,11 @@ USAGE
 
 UNIT TEST
 -----
-'python3 -m unittest test_main.py'
+`python3 -m unittest test_main.py`
 
 
 REQUIREMENTS
 -----
 
-Flask==0.12
+Flask==0.12 <br />
 requests==2.9.1
